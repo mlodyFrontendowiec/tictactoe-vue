@@ -49,7 +49,16 @@ export default {
           this.arrOfLetters[8] === this.actualChar) ||
         (this.arrOfLetters[2] === this.actualChar &&
           this.arrOfLetters[4] === this.actualChar &&
-          this.arrOfLetters[6] === this.actualChar)
+          this.arrOfLetters[6] === this.actualChar) ||
+        (this.arrOfLetters[0] === this.actualChar &&
+          this.arrOfLetters[3] === this.actualChar &&
+          this.arrOfLetters[6] === this.actualChar) ||
+        (this.arrOfLetters[1] === this.actualChar &&
+          this.arrOfLetters[4] === this.actualChar &&
+          this.arrOfLetters[7] === this.actualChar) ||
+        (this.arrOfLetters[2] === this.actualChar &&
+          this.arrOfLetters[5] === this.actualChar &&
+          this.arrOfLetters[8] === this.actualChar)
       ) {
         alert("The winner is " + this.actualChar);
         window.location.reload();

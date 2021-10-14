@@ -1,4 +1,5 @@
 <template>
+  <h1 class="h1">Tic Tac Toe</h1>
   <Board />
 </template>
 
@@ -11,4 +12,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+</style>
