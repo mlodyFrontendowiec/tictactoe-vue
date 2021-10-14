@@ -1,11 +1,13 @@
 <template>
-  <h1>Hello Vue</h1>
+  <Board />
 </template>
 
 <script>
+import Board from "./components/Board.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: { Board },
 };
 </script>
 
