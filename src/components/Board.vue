@@ -87,5 +87,8 @@ export default {
   height: 60px;
   background-color: cadetblue;
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
