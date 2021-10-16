@@ -1,17 +1,17 @@
 <template>
   <section class="wrapper">
-    <div
+    <Cell
       v-for="(letter, id) in arrOfLetters"
       :key="id"
       @click="setChar(id)"
       class="cell"
-    >
-      {{ letter }}
-    </div>
+      :letter="letter"
+    />
   </section>
 </template>
 
 <script>
+import Cell from "./Cell.vue";
 export default {
   name: "Board",
   data: () => ({
@@ -19,6 +19,9 @@ export default {
     actualChar: "O",
     step: 0,
   }),
+  components: {
+    Cell,
+  },
   methods: {
     setChar(id) {
       if (this.arrOfLetters[id] !== "") return;
